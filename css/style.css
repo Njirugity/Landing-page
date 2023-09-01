@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
+    font-family: Roboto, sans-serif;
 }
+
 ul{
     list-style: none;
     display: flex;
@@ -16,52 +19,95 @@ a{
     font-size: 18px;
     color: #E5E7EB;
 }
+
 .header{
     background-color: #1F2937;
+    padding: 10px 100px 100px 100px;
+    max-height: 300px;
 }
+
 .title{
     font-size: 18px;
     font-weight: bold;
     color: #F9FAF8;
 }
+
 .navigation{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-content{
     display: flex;
+    justify-content: center; 
+    color: #E5E7EB;   
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    flex: 1;   
+}
+
+.description-head{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    max-width: 400px;
+    max-height: 150px;
+}
+
+.description-body{ 
+    max-width: 400px;
     font-size: 18px;
+}
+
+.description-button,
+.signup-button{
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
     color: #E5E7EB;
+    padding: 10px 40px;
+    font-size: 18px;
 }
 
-
-.description-body{
-    word-wrap: break-word;
-}
-.header-image,
-img{
-    width: 400px;
+.header-image{
+    width: 500px;
+    height: 200px;
+    border-radius: 0px;
+    margin-top: 50px;
 }
 
 .info {
     text-align: center;
     height: 500px;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
+
+.info-head{
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
 .info-cards{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 52px;
-
-    
+    padding: 0px 100px;   
 }
 
 .card{
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card-image,
 img {
@@ -69,46 +115,55 @@ img {
     height: 200px;
     border-radius: 16px;
 }
+
 .card-content{
     text-align: center;
 }
 
 .quote{
-    height: 400px;
+    max-height: 400px;
     background-color: #E5E7Eb;
     font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
     color: #1F2937;
-    word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 200px; 
 }
+
+.author{
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+}
+
 .signup-container{
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 200px;
 }
 
-.signup{
-    max-height: 100px;
-    max-width: 1500px;
+.signup{  
     display: flex;
+    flex: 1;
     background-color: #3882F6;
-    border-radius: 16px;
-    padding: 48px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 52px;
+    border-radius: 16px;
+    color: #E5E7EB;    
+}
+.signup-button {
+    border: solid 1px #E5E7EB;
 }
 
 .footer{
-    max-height: 200px;
+    max-height: 250px;
     background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
     flex-direction: row;
+    color: #E5E7EB;
 }
